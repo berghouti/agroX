@@ -101,28 +101,7 @@ python
 @apply_resource_limits(15)         # CPU protection
 input_validation(max_length=100)   # Injection prevention
 CORS_restriction()                 # Origin security
-🏗️ Architecture Overview
-text
-┌─────────────────────────────────────────────────────────┐
-│                    AgroAI Platform                       │
-├─────────────────────────────────────────────────────────┤
-│  Frontend (SolidJS)        Backend (FastAPI)            │
-│  • GeneticsSearch.jsx      • HybridGNN Model           │
-│  • Real-time Charts        • Genetic Analysis Engine   │
-│  • Responsive UI           • Region-Specific Weights   │
-│                                                         │
-│  ┌───────────────────────┐  ┌───────────────────────┐  │
-│  │      User Interface   │  │    AI Brain           │  │
-│  │  • Search Plants      │  │  • GNN Predictions    │  │
-│  │  • View Analytics     │  │  • Trait Analysis     │  │
-│  │  • Export Reports     │  │  • Compatibility Calc │  │
-│  └───────────────────────┘  └───────────────────────┘  │
-│                                                         │
-│  Data Layer                    Security Layer           │
-│  • Plant Genetics DB          • Rate Limiting          │
-│  • Region Weights             • Input Validation       │
-│  • Historical Data            • Resource Limits        │
-└─────────────────────────────────────────────────────────┘
+
 🔧 API Reference
 Core Endpoints:
 Endpoint	Method	Description	Rate Limit
@@ -162,22 +141,6 @@ Tm: Optimal temperature
 
 C_value: Conservation value
 
-🛠️ Development Guide
-Project Structure:
-text
-agroai/
-├── app.py                    # FastAPI main application
-├── requirements.txt          # Python dependencies
-├── hybrid_gnn_model.pkl     # Trained AI model
-├── cleaned_data.csv         # Plant genetics database
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   │   └── GeneticsSearch.jsx  # Main UI component
-│   │   └── App.jsx          # Application entry
-│   ├── public/              # Static assets
-│   └── package.json         # Frontend dependencies
-└── README.md                # This file
 Extending AgroAI:
 Add New Genetic Traits:
 
