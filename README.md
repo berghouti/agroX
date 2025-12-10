@@ -6,7 +6,7 @@ AgroAI's Solution: An intelligent platform that uses Graph Neural Networks to pr
 🚀 Quick Start - Get Running in 5 Minutes
 1. Clone & Setup
 bash
-git clone https://github.com/yourusername/agroai.git
+git clone https://github.com/yourusername/agroX.git
 cd agroai
 
 # Install backend dependencies
